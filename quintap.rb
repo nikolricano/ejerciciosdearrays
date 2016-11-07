@@ -1,5 +1,5 @@
 a = [1,2,3,0,1,2,2,1,2,1,2,0,3]
 b = [:azul, :verde, :amarillo]
 
-print b[1, 2]
-puts
+#print b.group_by(&:object_id).values_at(*a).flatten(1)
+#print b.sort_by {|x| a.index x.id}

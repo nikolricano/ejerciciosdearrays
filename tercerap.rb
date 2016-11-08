@@ -1,6 +1,18 @@
+require 'pry'
 a = [ 1, 2, 3 ]
 b = [:azul, :rojo, :amarillo]
 c = [ "Tacos", "Quesadillas", "Hamburguesas"]
 
-print  "#{a[0]} #{b[0]} #{c[0]}, #{a[1]} #{b[1]} #{c[1]}, #{a[2]} #{b[2]} #{c[2]}"
-puts
+final = []
+
+3.times do |n|
+  final.push(a[n])
+  final.push(b[n])
+  final.push(c[n])
+end
+
+3.times do |n|
+  final << [a[n], b[n], c[n]]
+end
+
+p final.flatten
